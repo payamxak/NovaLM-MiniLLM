@@ -1,0 +1,4 @@
+﻿input_files: [datas/processed/all_text.txt]
+model_prefix: datas/tokenizer/novalm
+vocab_size: 8192
+character_coverage: 0.9995

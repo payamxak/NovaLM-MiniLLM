@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novalm"
+version = "0.1.0"
+description = "A small decoder-only language model implemented in PyTorch"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.2", "PyYAML>=6", "numpy>=1.26", "sentencepiece>=0.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+serve = ["fastapi>=0.110", "uvicorn>=0.29"]
+
+[tool.setuptools.packages.find]
+include = ["novalm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

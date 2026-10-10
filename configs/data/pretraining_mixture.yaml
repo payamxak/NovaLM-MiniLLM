@@ -1,0 +1,36 @@
+# Replace source paths and license identifiers with the provenance for your corpus.
+# `unknown` is deliberately not supplied as a default license declaration.
+output_file: data/processed/train.jsonl
+quality:
+  min_chars: 40
+  max_chars: 1000000
+  min_alpha_ratio: 0.15
+  max_url_ratio: 0.2
+  max_repeated_line_ratio: 0.5
+  max_repeated_char_ratio: 0.3
+  max_symbol_ratio: 0.45
+  max_garbage_ratio: 0.01
+sources:
+  english:
+    input_files: [data/raw/english]
+    source_name: english_corpus
+    license: REPLACE_WITH_ACTUAL_LICENSE
+    languages: [en]
+  persian:
+    input_files: [data/raw/persian]
+    source_name: persian_corpus
+    license: REPLACE_WITH_ACTUAL_LICENSE
+    languages: [fa]
+  code:
+    input_files: [data/raw/code]
+    source_name: code_corpus
+    license: REPLACE_WITH_ACTUAL_LICENSE
+    languages: [en, mixed]
+mixture_weights:
+  english: 0.4
+  persian: 0.35
+  code: 0.15
+  # Add an appropriately licensed math/science source for the remaining 0.10.
+mixture_seed: 42
+near_dedup: false
+# Enable only after checking near_dedup runtime/memory for your collection.

@@ -1,0 +1,4 @@
+input_files: [data/processed/train.jsonl]
+model_prefix: data/tokenizer/novalm_8k
+vocab_size: 8192
+character_coverage: 0.9995

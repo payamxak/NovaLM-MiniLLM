@@ -1,0 +1,5 @@
+# Post-training
+
+SFT examples are JSONL records with a `messages` array. Formatting uses role tokens and masks system/user/tool content with `-100`, so cross-entropy is applied only to assistant content. `scripts/sft.py` loads a base trainer checkpoint and trains with the shared AdamW trainer.
+
+DPO examples contain `prompt`, `chosen`, and `rejected` strings. `scripts/dpo.py` starts from a base checkpoint, freezes a reference copy, sums completion token log probabilities, and optimizes the direct preference objective. Completion-aware truncation reserves a conditioning token and at least one next-token target, and the CLI checks tokenizer/checkpoint compatibility. The implementation is a small research path and has not been evaluated on real preference data. `grpo.py` exposes a clipped group-relative policy-loss primitive; reward design, group sampling, KL control, a training pipeline, and evaluation are not implemented. No controlled before/after instruction or preference benchmark results are available.

@@ -1,0 +1,7 @@
+{
+  "dataset": "wikimedia/wikipedia",
+  "config": "20231101.en",
+  "license": "CC BY-SA 4.0",
+  "source": "https://huggingface.co/datasets/wikimedia/wikipedia",
+  "collected_at": "2026-10-08T11:56:42Z"
+}

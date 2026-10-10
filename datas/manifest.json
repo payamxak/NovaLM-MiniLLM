@@ -1,0 +1,54 @@
+{
+  "prepared_at_utc": "2026-10-08",
+  "purpose": "English + Persian causal-language-model pretraining data; model training not run",
+  "model_config": "configs/model/novalm_30m.yaml",
+  "target_tokens": 600000000,
+  "target_tokens_per_parameter": 20,
+  "source": {
+    "datasets": [
+      "wikimedia/wikipedia"
+    ],
+    "configs": [
+      "20231101.en",
+      "20231101.fa"
+    ],
+    "license": "CC BY-SA 4.0",
+    "attribution": [
+      "raw/wiki_en/attribution.json",
+      "raw/wiki_fa/attribution.json"
+    ]
+  },
+  "current": {
+    "train_tokens": 31178240,
+    "validation_tokens": 323584,
+    "total_tokens": 31501824,
+    "train_shards": 32,
+    "validation_shards": 1,
+    "documents": 10735,
+    "english_documents": 6636,
+    "persian_documents": 4099
+  },
+  "tokenizer": {
+    "path": "tokenizer/novalm.model",
+    "vocab_size": 8192,
+    "sha256": "f3b0d09b8a84e2113ceac8986c4a2a7dfac2b2ff665325bd45eeb576cf9dbb8d"
+  },
+  "resume_command": "python datas/collect_wikipedia.py --target-tokens 600000000 --workers 3",
+  "finalize_command": "powershell -ExecutionPolicy Bypass -File datas/finalize.ps1",
+  "note": "Current combined shards contain 31.5M tokens and are directly readable by scripts/train.py. Continue both resumable collectors and run finalize_project_data.ps1 to approach the 600M-token target.",
+  "source_languages": [
+    "en",
+    "fa"
+  ],
+  "project_paths": {
+    "train_shards": "data/shards/train",
+    "validation_shards": "data/shards/validation",
+    "tokenizer_model": "data/tokenizer/novalm.model",
+    "tokenizer_vocab": "data/tokenizer/novalm.vocab"
+  },
+  "resume_commands": {
+    "english": "python datas/collect_wikipedia.py --language en --target-tokens 600000000 --workers 3",
+    "persian": "python datas/collect_wikipedia.py --language fa --target-tokens 600000000 --workers 2",
+    "rebuild": "powershell -ExecutionPolicy Bypass -File datas/finalize_project_data.ps1"
+  }
+}

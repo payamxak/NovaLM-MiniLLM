@@ -1,0 +1,129 @@
+{
+  "dtype": "uint32-le",
+  "total_tokens": 19833344,
+  "shard_count": 20,
+  "shards": [
+    {
+      "path": "tokens-00000.bin",
+      "tokens": 1000000,
+      "sha256": "ea9f8581b1f66106b794a8aad2f186e8a5489367f281fc5b67779a6ac1dd2d84"
+    },
+    {
+      "path": "tokens-00001.bin",
+      "tokens": 1000000,
+      "sha256": "6bfd6ef912bcf4a491a54a8476306fc26b0129465bcc815d931680b3d7ab0314"
+    },
+    {
+      "path": "tokens-00002.bin",
+      "tokens": 1000000,
+      "sha256": "f06bd23f29b58d2aaf515109dc9b447c515681eabc01fbc56316d2f88a8e25de"
+    },
+    {
+      "path": "tokens-00003.bin",
+      "tokens": 1000000,
+      "sha256": "8f3b6d46d1a601e193063bbdfdf81b6ce41282bfba6688c5e41d8999a24e1c18"
+    },
+    {
+      "path": "tokens-00004.bin",
+      "tokens": 1000000,
+      "sha256": "f4bfae1264c505b4e5f3eed2815489752aa485c97e33be1f7a4505a0cbd20371"
+    },
+    {
+      "path": "tokens-00005.bin",
+      "tokens": 1000000,
+      "sha256": "7f1f52de826ca0b0cb180725da37cd087972a1bf22128dee746bf8c4504b1ac5"
+    },
+    {
+      "path": "tokens-00006.bin",
+      "tokens": 1000000,
+      "sha256": "7846ffdae43a8badefe9becaf09046b958419bfdbbcb597c9dadbe1624fad494"
+    },
+    {
+      "path": "tokens-00007.bin",
+      "tokens": 1000000,
+      "sha256": "add79606771365a4f197c49fc1cf7f7ccf2232cf9b734ea639a755df2917b9a1"
+    },
+    {
+      "path": "tokens-00008.bin",
+      "tokens": 1000000,
+      "sha256": "7dee7520275aa900dad2971a7305af7d23472eab9f32edd32586403ca0926556"
+    },
+    {
+      "path": "tokens-00009.bin",
+      "tokens": 1000000,
+      "sha256": "8eb32a8a61b3ab3b29d681ab641255b81616e83b2c0d7331fecfdd50adb553d5"
+    },
+    {
+      "path": "tokens-00010.bin",
+      "tokens": 1000000,
+      "sha256": "fcb67204ebb95784b75d8ec9e9c5aab31b9300820f044b91936a46cf09c4b6ed"
+    },
+    {
+      "path": "tokens-00011.bin",
+      "tokens": 1000000,
+      "sha256": "74136554f03c7102a8dbb198fdd8e46b8ae76a2f88c1a513aad27371eb4491a2"
+    },
+    {
+      "path": "tokens-00012.bin",
+      "tokens": 1000000,
+      "sha256": "0889261b9bee6aef1f9ebd6357a26704d609240385bb24f241629600f53ce7c4"
+    },
+    {
+      "path": "tokens-00013.bin",
+      "tokens": 1000000,
+      "sha256": "e30e77818d139de5a08150f4d000c63a328c51e75b35820ec5d14371b55582ce"
+    },
+    {
+      "path": "tokens-00014.bin",
+      "tokens": 1000000,
+      "sha256": "51e5f3925ee08466870448046eb8d99db52d05f91a9763a0d807b933cde3a2df"
+    },
+    {
+      "path": "tokens-00015.bin",
+      "tokens": 1000000,
+      "sha256": "ffdbef91364992ad26292bcb84ea9510b8b52b4308f1ffbc4c6d7fc298704475"
+    },
+    {
+      "path": "tokens-00016.bin",
+      "tokens": 1000000,
+      "sha256": "6953e4e1fa6b0312a0e35c3ce5f340d8db3e26167cbe4f535af5966a5d2787c3"
+    },
+    {
+      "path": "tokens-00017.bin",
+      "tokens": 1000000,
+      "sha256": "e66d9bfebd5d09c671462d0f99692f5079e41dc0b6d6be612ae7066779d673b4"
+    },
+    {
+      "path": "tokens-00018.bin",
+      "tokens": 1000000,
+      "sha256": "e2231acda576b2391320ba51580b81d19e7b1af498a2b3f703280151ddfdb1e2"
+    },
+    {
+      "path": "tokens-00019.bin",
+      "tokens": 833344,
+      "sha256": "9b84cb9a5b0ad4e9672a2fe83da283496961518340660e9a54032ffb59899747"
+    }
+  ],
+  "source": "datas/processed/train_tokens.jsonl",
+  "block_size": 512,
+  "preprocessing_version": "0.1.0",
+  "licenses": [
+    "CC BY-SA 4.0"
+  ],
+  "languages": [
+    "en"
+  ],
+  "document_count": 6569,
+  "tokenizer_vocab_sizes": [
+    8192
+  ],
+  "tokenizer_sha256": [
+    "78d20ff2f2331c9faba7117cd10b6edba4a7164c0eabe6ee0da885306b79e24f"
+  ],
+  "mixture_counts": {
+    "wikipedia": 6569
+  },
+  "attribution_manifests": [
+    "datas/raw/wiki_en/attribution.json"
+  ]
+}

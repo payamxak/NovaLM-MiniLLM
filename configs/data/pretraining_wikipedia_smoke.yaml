@@ -1,0 +1,22 @@
+output_file: data/processed/wikipedia_smoke.jsonl
+quality:
+  min_chars: 80
+sources:
+  english:
+    input_files: [data/raw/wiki_en]
+    source_name: English Wikipedia page summaries
+    license: CC BY-SA 4.0; verify page-specific exceptions
+    attribution_manifest: data/raw/wiki_en/attribution.json
+    languages: [en]
+  persian:
+    input_files: [data/raw/wiki_fa]
+    source_name: Persian Wikipedia page summaries
+    license: CC BY-SA 4.0; verify page-specific exceptions
+    attribution_manifest: data/raw/wiki_fa/attribution.json
+    languages: [fa]
+mixture_weights:
+  english: 0.5
+  persian: 0.5
+mixture_seed: 42
+near_dedup: true
+near_dedup_threshold: 0.9

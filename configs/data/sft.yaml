@@ -1,0 +1,3 @@
+input_file: data/processed/sft.jsonl
+assistant_only_loss: true
+max_seq_length: 2048

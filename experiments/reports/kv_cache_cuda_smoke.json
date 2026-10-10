@@ -1,0 +1,15 @@
+﻿{
+  "timestamp_utc": "2026-10-06T17:47:17.583239+00:00",
+  "python": "3.13.15",
+  "torch": "2.6.0+cu124",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "parameter_count": 402176,
+  "prompt_tokens": 32,
+  "decode_tokens": 16,
+  "uncached_seconds_per_token": 0.013254043748020194,
+  "cached_seconds_per_token": 0.003351181250764057,
+  "uncached_tokens_per_second": 75.44867204390914,
+  "cached_tokens_per_second": 298.4022424248177,
+  "kv_cache_bytes": 49152
+}

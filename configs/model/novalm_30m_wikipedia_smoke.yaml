@@ -1,0 +1,15 @@
+model:
+  vocab_size: 1024
+  hidden_size: 512
+  num_layers: 10
+  num_attention_heads: 8
+  num_kv_heads: 4
+  intermediate_size: 1408
+  max_seq_length: 128
+  tie_embeddings: true
+  attention_backend: sdpa
+  qk_norm: true
+  attention_type: gqa
+  norm_type: rmsnorm
+  mlp_type: swiglu
+  position_type: rope

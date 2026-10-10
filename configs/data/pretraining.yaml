@@ -1,0 +1,6 @@
+input_files: [data/raw]
+output_file: data/processed/train.jsonl
+min_chars: 40
+max_chars: 1000000
+source_name: local_corpus
+license: unknown

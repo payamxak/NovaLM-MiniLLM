@@ -1,0 +1,5 @@
+# Per-process training settings for the torchrun/DDP entry point in scripts/train.py.
+# Launch with the same model/data arguments on every rank.
+precision: bf16
+gradient_accumulation_steps: 1
+activation_checkpointing: false

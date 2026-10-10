@@ -1,0 +1,14 @@
+﻿output_file: datas/processed/train.jsonl
+quality:
+  min_chars: 200
+  max_chars: 1000000
+  min_alpha_ratio: 0.55
+  max_punctuation_ratio: 0.35
+languages: [en]
+sources:
+  wikipedia:
+    input_files: [datas/raw/wiki_en]
+    languages: [en]
+    source_name: Wikimedia Wikipedia 20231101 English
+    license: CC BY-SA 4.0
+    attribution_manifest: datas/raw/wiki_en/attribution.json

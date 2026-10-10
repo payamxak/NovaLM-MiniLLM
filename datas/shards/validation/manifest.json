@@ -1,0 +1,34 @@
+{
+  "dtype": "uint32-le",
+  "total_tokens": 204800,
+  "shard_count": 1,
+  "shards": [
+    {
+      "path": "tokens-00000.bin",
+      "tokens": 204800,
+      "sha256": "775a3f9fe4049204cad1bee3a093e050364ba8efa392825bcac1a080eae9d487"
+    }
+  ],
+  "source": "datas/processed/validation_tokens.jsonl",
+  "block_size": 512,
+  "preprocessing_version": "0.1.0",
+  "licenses": [
+    "CC BY-SA 4.0"
+  ],
+  "languages": [
+    "en"
+  ],
+  "document_count": 67,
+  "tokenizer_vocab_sizes": [
+    8192
+  ],
+  "tokenizer_sha256": [
+    "78d20ff2f2331c9faba7117cd10b6edba4a7164c0eabe6ee0da885306b79e24f"
+  ],
+  "mixture_counts": {
+    "wikipedia": 67
+  },
+  "attribution_manifests": [
+    "datas/raw/wiki_en/attribution.json"
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "run": "wikipedia_30m_smoke_v3",
+  "recorded_at_utc": "2026-10-06T20:30:29.782771+00:00",
+  "purpose": "real-text training-pipeline smoke run; not a model-quality claim",
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "seed": 42,
+    "parameter_count": 30027520,
+    "effective_batch_size": 1,
+    "device": "cuda"
+  },
+  "git_commit": "unavailable: workspace has no Git metadata",
+  "model_config": "configs/model/novalm_30m_wikipedia_smoke.yaml",
+  "training_config": "configs/training/wikipedia_smoke.yaml",
+  "model_parameters": 30027520,
+  "tokenizer": {
+    "model": "data/tokenizer/wikipedia_smoke.model",
+    "vocabulary_size": 1024,
+    "analysis_report": "experiments/reports/wikipedia_tokenizer_analysis.json",
+    "training_corpus_analysis": {
+      "fa": {
+        "documents": 4,
+        "words": 410,
+        "tokens": 597,
+        "unknown_tokens": 0,
+        "tokens_per_word": 1.4560975609756097,
+        "unknown_rate": 0.0
+      },
+      "en": {
+        "documents": 4,
+        "words": 273,
+        "tokens": 472,
+        "unknown_tokens": 0,
+        "tokens_per_word": 1.728937728937729,
+        "unknown_rate": 0.0
+      }
+    }
+  },
+  "training_data": {
+    "manifest": "data/shards/wikipedia_smoke/manifest.json",
+    "summary_documents": 8,
+    "source_tokens": 1024,
+    "non_overlapping_windows": 7,
+    "mixture_counts": {
+      "persian": 4,
+      "english": 4
+    },
+    "licenses": [
+      "CC BY-SA 4.0; verify page-specific exceptions"
+    ],
+    "attribution_manifests": [
+      "data/raw/wiki_fa/attribution.json",
+      "data/raw/wiki_en/attribution.json"
+    ]
+  },
+  "validation_data": {
+    "manifest": "data/shards/wikipedia_validation/manifest.json",
+    "summary_documents": 4,
+    "source_tokens": 640,
+    "evaluated_next_token_targets": 512,
+    "mixture_counts": {
+      "english": 2,
+      "persian": 2
+    },
+    "licenses": [
+      "CC BY-SA 4.0; verify page-specific exceptions"
+    ],
+    "attribution_manifests": [
+      "data/raw/wiki_en_validation/attribution.json",
+      "data/raw/wiki_fa_validation/attribution.json"
+    ]
+  },
+  "source_pages": [
+    {
+      "title": "Earth",
+      "revision_id": "1378791963",
+      "source_url": "https://en.wikipedia.org/wiki/Earth",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 1378791963
+    },
+    {
+      "title": "Physics",
+      "revision_id": "1378645156",
+      "source_url": "https://en.wikipedia.org/wiki/Physics",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 1378645156
+    },
+    {
+      "title": "Mathematics",
+      "revision_id": "1378649367",
+      "source_url": "https://en.wikipedia.org/wiki/Mathematics",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 1378649367
+    },
+    {
+      "title": "Programming language",
+      "revision_id": "1378212562",
+      "source_url": "https://en.wikipedia.org/wiki/Programming_language",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 1378212562
+    },
+    {
+      "title": "زمین",
+      "revision_id": "44455305",
+      "source_url": "https://fa.wikipedia.org/wiki/%D8%B2%D9%85%DB%8C%D9%86",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.fa",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 44455305
+    },
+    {
+      "title": "فیزیک",
+      "revision_id": "43792391",
+      "source_url": "https://fa.wikipedia.org/wiki/%D9%81%DB%8C%D8%B2%DB%8C%DA%A9",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.fa",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 43792391
+    },
+    {
+      "title": "ریاضیات",
+      "revision_id": "44383610",
+      "source_url": "https://fa.wikipedia.org/wiki/%D8%B1%DB%8C%D8%A7%D8%B6%DB%8C%D8%A7%D8%AA",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.fa",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 44383610
+    },
+    {
+      "title": "زبان فارسی",
+      "revision_id": "44010205",
+      "source_url": "https://fa.wikipedia.org/wiki/%D8%B2%D8%A8%D8%A7%D9%86_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.fa",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 44400995
+    },
+    {
+      "title": "Computer science",
+      "revision_id": "1375917851",
+      "source_url": "https://en.wikipedia.org/wiki/Computer_science",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 1375917851
+    },
+    {
+      "title": "Natural language processing",
+      "revision_id": "1374356070",
+      "source_url": "https://en.wikipedia.org/wiki/Natural_language_processing",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 1374356070
+    },
+    {
+      "title": "علوم رایانه",
+      "revision_id": "44229048",
+      "source_url": "https://fa.wikipedia.org/wiki/%D8%B9%D9%84%D9%88%D9%85_%D8%B1%D8%A7%DB%8C%D8%A7%D9%86%D9%87",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.fa",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 44229048
+    },
+    {
+      "title": "یادگیری ماشین",
+      "revision_id": "44449071",
+      "source_url": "https://fa.wikipedia.org/wiki/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C_%D9%85%D8%A7%D8%B4%DB%8C%D9%86",
+      "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.fa",
+        "title": "Creative Commons Attribution-Share Alike 4.0"
+      },
+      "license_metadata_revision_id": 44449071
+    }
+  ],
+  "training": {
+    "seed": 42,
+    "optimizer_steps": 100,
+    "precision": "bf16",
+    "activation_checkpointing": true,
+    "batch_size": 1,
+    "context_length": 128,
+    "unique_training_tokens": 1024,
+    "token_presentations": 12800,
+    "initial_step_loss": 7.034912109375,
+    "final_step_loss": 2.627593994140625,
+    "validation_curve": [
+      {
+        "step": 10,
+        "validation_loss": 6.8394535779953,
+        "validation_perplexity": 933.9786487859193,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 20,
+        "validation_loss": 6.917103171348572,
+        "validation_perplexity": 1009.3917203723255,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 30,
+        "validation_loss": 7.174743890762329,
+        "validation_perplexity": 1306.0255729396645,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 40,
+        "validation_loss": 7.251813769340515,
+        "validation_perplexity": 1410.6611431705176,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 50,
+        "validation_loss": 7.263648152351379,
+        "validation_perplexity": 1427.454621668557,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 60,
+        "validation_loss": 7.389263033866882,
+        "validation_perplexity": 1618.512884121476,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 70,
+        "validation_loss": 7.348788380622864,
+        "validation_perplexity": 1554.312151773196,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 80,
+        "validation_loss": 7.122468829154968,
+        "validation_perplexity": 1239.5067896026123,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 90,
+        "validation_loss": 7.060789346694946,
+        "validation_perplexity": 1165.364679575701,
+        "validation_tokens": 512.0
+      },
+      {
+        "step": 100,
+        "validation_loss": 7.0075461864471436,
+        "validation_perplexity": 1104.9398592439663,
+        "validation_tokens": 512.0
+      }
+    ],
+    "initial_random_model_validation": {
+      "loss": 7.0185041427612305,
+      "perplexity": 1117.114323754055,
+      "tokens": 512
+    },
+    "best_validation": {
+      "step": 10,
+      "loss": 6.8394535779953,
+      "perplexity": 933.9786487859193,
+      "evaluated_tokens": 512.0
+    },
+    "final_validation": {
+      "loss": 7.0075461864471436,
+      "perplexity": 1104.9398592439663,
+      "tokens": 512
+    },
+    "best_checkpoint": "experiments/runs/wikipedia_30m_smoke_v3/best.pt",
+    "final_checkpoint": "experiments/runs/wikipedia_30m_smoke_v3/checkpoint.pt"
+  },
+  "interpretation": "Train loss fell substantially. Validation improved early, then degraded with continued optimization; the final validation perplexity was only slightly better than random initialization and worse than the step-10 best. Eight short training summaries are far too little data for a meaningful 30M-model quality claim.",
+  "limitations": [
+    "Only eight Wikipedia lead summaries (1,024 tokenizer IDs) for training and four held-out summaries (640 IDs) for validation.",
+    "The run is a data/model integration smoke experiment, not the spec's corpus-scale pretraining acceptance.",
+    "The locally fetched text and best/final checkpoints are ignored artifacts; no data or checkpoint is committed.",
+    "Review the per-page license and attribution records before redistributing derived artifacts.",
+    "No Git commit metadata is available in this workspace."
+  ]
+}

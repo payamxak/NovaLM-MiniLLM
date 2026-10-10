@@ -1,0 +1,3 @@
+input_file: data/processed/preferences.jsonl
+format: {prompt: string, chosen: string, rejected: string}
+beta: 0.1

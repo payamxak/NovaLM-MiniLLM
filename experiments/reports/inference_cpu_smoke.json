@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-07T08:29:04.548705+00:00",
+  "python": "3.13.15",
+  "torch": "2.6.0+cu124",
+  "device": "cpu",
+  "gpu_name": null,
+  "parameter_count": 402176,
+  "prompt_tokens": 4,
+  "generated_tokens": 4,
+  "time_to_first_token_seconds": 0.003671900136396289,
+  "total_generation_seconds": 0.008149800123646855,
+  "decode_tokens_per_second": 669.9569013469642,
+  "post_first_token_seconds_per_token": 0.001492633329083522
+}

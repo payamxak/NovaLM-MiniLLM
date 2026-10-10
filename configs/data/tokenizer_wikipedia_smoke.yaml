@@ -1,0 +1,4 @@
+input_files: [data/processed/wikipedia_smoke.jsonl]
+model_prefix: data/tokenizer/wikipedia_smoke
+vocab_size: 1024
+character_coverage: 1.0

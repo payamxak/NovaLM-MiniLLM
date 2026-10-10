@@ -1,0 +1,55 @@
+﻿{
+  "timestamp_utc": "2026-10-06T19:14:49.810795+00:00",
+  "python": "3.13.15",
+  "torch": "2.6.0+cu124",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "shape": [
+    1,
+    32
+  ],
+  "iterations": 2,
+  "quality_evaluated": false,
+  "results": {
+    "mha": {
+      "parameters": 434944,
+      "seconds_per_forward": 0.002812699996866286,
+      "tokens_per_second": 11376.968761564392,
+      "cache_bytes_for_prompt": 65536,
+      "peak_memory_bytes": 10569728,
+      "estimated_active_parameters": 434944
+    },
+    "gqa": {
+      "parameters": 402176,
+      "seconds_per_forward": 0.0028516000602394342,
+      "tokens_per_second": 11221.769997196985,
+      "cache_bytes_for_prompt": 32768,
+      "peak_memory_bytes": 10405888,
+      "estimated_active_parameters": 402176
+    },
+    "mla": {
+      "parameters": 418432,
+      "seconds_per_forward": 0.005703350063413382,
+      "tokens_per_second": 5610.73748660071,
+      "cache_bytes_for_prompt": 16384,
+      "peak_memory_bytes": 10452992,
+      "estimated_active_parameters": 418432
+    },
+    "dense": {
+      "parameters": 402176,
+      "seconds_per_forward": 0.0029157999670132995,
+      "tokens_per_second": 10974.68974621675,
+      "cache_bytes_for_prompt": 32768,
+      "peak_memory_bytes": 10405888,
+      "estimated_active_parameters": 402176
+    },
+    "moe": {
+      "parameters": 1214208,
+      "seconds_per_forward": 0.006149449967779219,
+      "tokens_per_second": 5203.717432887142,
+      "cache_bytes_for_prompt": 32768,
+      "peak_memory_bytes": 13669376,
+      "estimated_active_parameters": 673536
+    }
+  }
+}
